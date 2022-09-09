@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link for CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/style.min.css" /> -->
+    <!-- Link for Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Script for FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/d2b183de45.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- For Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>DigiSell</title>
+  </head>
+  <body>
+    <header>
+      <section class="container">
+        <aside class="aside-menu">
+          <div class="aside-menu__btn">
+            <span id="close-btn">
+              <i class="fas fa-times"></i>
+            </span>
+          </div>
+          <div class="aside-menu__content">
+            <ul class="aside-menu__content__list">
+              <li class="aside-menu__content__list__list-item">
+                <a
+                  href="./index.html"
+                  class="aside-menu__content__list__list-item__link"
+                  >Home</a
+                >
+              </li>
+              <li id="firstDrop" class="aside-menu__content__list__list-item">
+                <a
+                  href="javascript:void(0)"
+                  class="aside-menu__content__list__list-item__link"
+                  >Dropdown</a
+                >
+                <span><i class="fas fa-angle-down rotate"></i></span>
+                <ul class="aside-menu__content__list__list-item__drop">
+                  <li class="aside-menu__content__list__list-item__drop__item">
+                    <a
+                      href="./index.html"
+                      class="aside-menu__content__list__list-item__drop__item__link"
+                      >Menu One</a
+                    >
+                  </li>
+                  <li
+                    id="secondDrop"
+                    class="aside-menu__content__list__list-item__drop__item"
+                  >
+                    <a
+                      href="javascript:void(0)"
+                      class="aside-menu__content__list__list-item__drop__item__link"
+                      >Menu Two</a
+                    >
+                    <span><i class="fas fa-angle-down rotate"></i></span>
+                    <ul
+                      class="aside-menu__content__list__list-item__drop__item__submenu"
+                    >
+                      <li
+                        class="aside-menu__content__list__list-item__drop__item__submenu__item"
+                      >
+                        <a
+                          href="./index.html"
+                          class="aside-menu__content__list__list-item__drop__item__submenu__item__link"
+                          >Sub Menu One</a
+                        >
+                      </li>
+                      <li
+                        class="aside-menu__content__list__list-item__drop__item__submenu__item"
+                      >
+                        <a
+                          href="./index.html"
+                          class="aside-menu__content__list__list-item__drop__item__submenu__item__link"
+                          >Sub Menu Two</a
+                        >
+                      </li>
+                      <li
+                        class="aside-menu__content__list__list-item__drop__item__submenu__item"
+                      >
+                        <a
+                          href="./index.html"
+                          class="aside-menu__content__list__list-item__drop__item__submenu__item__link"
+                          >Sub Menu Three</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="aside-menu__content__list__list-item__drop__item">
+                    <a
+                      href="./index.html"
+                      class="aside-menu__content__list__list-item__drop__item__link"
+                      >Menu Three</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="aside-menu__content__list__list-item">
+                <a
+                  href="./index.html"
+                  class="aside-menu__content__list__list-item__link"
+                  >Inner Page</a
+                >
+              </li>
+              <li class="aside-menu__content__list__list-item">
+                <a
+                  href="./index.html"
+                  class="aside-menu__content__list__list-item__link"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="aside-menu__content__list__list-item">
+                <a
+                  href="./index.html"
+                  class="aside-menu__content__list__list-item__link"
+                  >Free Templates</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <nav class="navigation-bar">
+          <div class="navigation-bar__icon">
+            <a href="./index.html"
+              ><img
+                src="./assets/images/icons/Digi Sell Logo 1.svg"
+                alt="DigiSell"
+            /></a>
+          </div>
+          <div class="navigation-bar__ctg-wrp d-none d-lg-flex">
+            <button class="navigation-bar__ctg-wrp__category">
+              <img src="./assets/images/icons/white-category.svg" alt="icon" />
+              <span>Categories</span>
+              <img
+                class="navigation-bar__ctg-wrp__category__arrow-icon"
+                src="./assets/images/icons/white-arrow-down.svg"
+                alt="arrow-down"
+              />
+              <ul class="navigation-bar__ctg-wrp__category__list">
+                <li class="navigation-bar__ctg-wrp__category__list__list-item">
+                  <a href="#">Category</a>
+                </li>
+                <li class="navigation-bar__ctg-wrp__category__list__list-item">
+                  <a href="#">Category</a>
+                </li>
+                <li class="navigation-bar__ctg-wrp__category__list__list-item">
+                  <a href="#">Category</a>
+                </li>
+                <li class="navigation-bar__ctg-wrp__category__list__list-item">
+                  <a href="#">Category</a>
+                </li>
+              </ul>
+            </button>
+          </div>
+          <div class="navigation-bar__right d-none d-lg-flex">
+            <div class="navigation-bar__right__like">
+              <img src="./assets/images/icons/white-heart.svg" alt="heart" />
+              <span class="navigation-bar__right__like__count">10</span>
+            </div>
+            <div class="navigation-bar__right__basket">
+              <img src="./assets/images/icons/white-basket.svg" alt="basket" />
+              <span class="navigation-bar__right__basket__count">0</span>
+            </div>
+            <div class="navigation-bar__right__login">
+              <img src="./assets/images/icons/white-login.svg" alt="login" />
+              <span>Sign in</span>
+            </div>
+          </div>
+          <div class="navigation-bar__burger-menu d-flex d-lg-none">
+            <span id="aside-btn" class="navigation-bar__burger-menu__burger">
+              <span></span>
+            </span>
+          </div>
+        </nav>
+        <div class="main">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6" style="z-index: 999">
+                <h1 class="main__header">
+                  World Top
+                  <span class="themes">Themes, Plugins & Templates</span>
+                </h1>
+                <p class="main__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Facilisi ultricies habitant eget volutpat ut aenean in dolor.
+                  Praesent mi velit in id hac platea leo vulputate.
+                </p>
+                <form action="#" class="main__form">
+                  <input
+                    type="text"
+                    class="main__form__mail"
+                    placeholder="e.g. “wordpress”"
+                  />
+                  <button type="submit" class="main__form__btn-wrapper">
+                    <img src="./assets/images/icons/white-search.svg" alt="" />
+                    <span class="main__form__btn-wrapper__btn">Search</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="main__bg d-none d-lg-block">
+              <figure class="position-relative">
+                <img
+                  src="./assets/images/icons/Ellipse 70.svg"
+                  alt="background"
+                  class="main__bg__img"
+                />
+                <img
+                  class="technologies"
+                  id="image8"
+                  src="./assets/images/icons/image 8.svg"
+                  alt="image 8"
+                />
+                <img
+                  class="technologies"
+                  id="angular"
+                  src="./assets/images/icons/angular.svg"
+                  alt="angular"
+                />
+                <img
+                  class="technologies"
+                  id="js"
+                  src="./assets/images/icons/js.svg"
+                  alt="js"
+                />
+                <img
+                  class="technologies"
+                  id="vue"
+                  src="./assets/images/icons/vue.svg"
+                  alt="vue"
+                />
+                <img
+                  class="technologies"
+                  id="net"
+                  src="./assets/images/icons/net.svg"
+                  alt=".net"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="why-choose-us">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 why-choose-us__header">
+              <h2>Why Choose Us</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article id="first-why" class="why-choose-us__content">
+                <div class="why-choose-us__content__img-wrp">
+                  <img
+                    src="./assets/images/icons/well-doc.svg"
+                    alt="Documentation"
+                  />
+                </div>
+                <span class="why-choose-us__content__name"
+                  >Well Documentation</span
+                >
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobor
+                  ornare in mattis.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article class="why-choose-us__content">
+                <div class="why-choose-us__content__img-wrp">
+                  <img
+                    src="./assets/images/icons/live-support.svg"
+                    alt="Documentation"
+                  />
+                </div>
+                <span class="why-choose-us__content__name">Live Support</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobor
+                  ornare in mattis.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article class="why-choose-us__content">
+                <div class="why-choose-us__content__img-wrp">
+                  <img
+                    src="./assets/images/icons/free-resource.svg"
+                    alt="Documentation"
+                  />
+                </div>
+                <span class="why-choose-us__content__name">Free Resource</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobor
+                  ornare in mattis.
+                </p>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article class="why-choose-us__content">
+                <div class="why-choose-us__content__img-wrp">
+                  <img
+                    src="./assets/images/icons/regular-update.svg"
+                    alt="Documentation"
+                  />
+                </div>
+                <span class="why-choose-us__content__name">Regular Update</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobor
+                  ornare in mattis.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 products__header">
+              <h2>Featured Products</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <article class="products__content">
+                <div class="products__content__img-wrp">
+                  <img
+                    class="products__content__img-wrp__img"
+                    src="./assets/images/portfo.jpg"
+                    alt="Portfo"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="products__content__text">
+                  Hazel - Clean Minimalist Multi-Pu...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="products__content__price">$50</span>
+                  <span class="products__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <article class="products__content">
+                <div class="products__content__img-wrp">
+                  <img
+                    class="products__content__img-wrp__img"
+                    src="./assets/images/icons/digiency.svg"
+                    alt="digiency"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="products__content__text">
+                  Monstroid2 - Multipurpose...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="products__content__price">$50</span>
+                  <span class="products__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <article class="products__content">
+                <div class="products__content__img-wrp">
+                  <img
+                    class="products__content__img-wrp__img"
+                    src="./assets/images/icons/appoly.svg"
+                    alt="appoly"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="products__content__text">
+                  Techno - IT Solutions & Business ...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="products__content__price">$50</span>
+                  <span class="products__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="all">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="all__header">
+              <h2>Let’s Check Out News Product Theme Templates & Plugin</h2>
+            </div>
+          </div>
+          <div class="all__categories">
+            <div class="all__categories__wrp d-none d-lg-block">
+              <ul class="all__categories__wrp__list">
+                <li class="all__categories__wrp__list__list-item active">
+                  All Categories
+                </li>
+                <li class="all__categories__wrp__list__list-item">
+                  HTML Design
+                </li>
+                <li class="all__categories__wrp__list__list-item">WP Themes</li>
+                <li class="all__categories__wrp__list__list-item">
+                  CMS Themes
+                </li>
+                <li class="all__categories__wrp__list__list-item">eCommerce</li>
+                <li class="all__categories__wrp__list__list-item">Blogging</li>
+                <li class="all__categories__wrp__list__list-item">
+                  UI Templates
+                </li>
+              </ul>
+            </div>
+            <div class="d-block d-lg-none all__categories__menu">
+              <button class="all__categories__menu__btn">
+                <img
+                  src="./assets/images/icons/white-category.svg"
+                  alt="icon"
+                />
+                <span>Categories</span>
+                <img
+                  class="all__categories__menu__btn__arrow-icon"
+                  src="./assets/images/icons/white-arrow-down.svg"
+                  alt="arrow-down"
+                />
+                <ul class="all__categories__menu__btn__list">
+                  <li class="all__categories__menu__btn__list__list-item">
+                    All Categories
+                  </li>
+                  <li class="all__categories__menu__btn__list__list-item">
+                    HTML Design
+                  </li>
+                  <li class="all__categories__menu__btn__list__list-item">
+                    WP Themes
+                  </li>
+                  <li class="all__categories__menu__btn__list__list-item">
+                    CMS Themes
+                  </li>
+                  <li class="all__categories__menu__btn__list__list-item">
+                    eCommerce
+                  </li>
+                  <li class="all__categories__menu__btn__list__list-item">
+                    Blogging
+                  </li>
+                  <li class="all__categories__menu__btn__list__list-item">
+                    UI Templates
+                  </li>
+                </ul>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/wokiee.png"
+                    alt="Portfo"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  Monstroid2 - Multipurpose Mo...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/mymedi.svg"
+                    alt="mymedi"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  Hazel - Clean Minimalist Multi...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/groca.svg"
+                    alt="grocs"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  Techno - IT Solutions & Business...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/pathsoft.png"
+                    alt="pathsoft"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  PathSoft - IT Solutions for Your ...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/brave.svg"
+                    alt="brave"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">Brave Theme Multipurpose</p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/elementor.svg"
+                    alt="elementor"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  Technology & IT Solution Servic...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/groca.svg"
+                    alt="groca"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  Techno - IT Solutions & Business...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <article class="all__content">
+                <div class="all__content__img-wrp">
+                  <img
+                    class="all__content__img-wrp__img"
+                    src="./assets/images/icons/pathsoft.png"
+                    alt="pathsoft"
+                  />
+                  <div class="overlay">
+                    <button class="overlay__btn">Preview</button>
+                    <div class="overlay__shop basket">
+                      <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                    </div>
+                  </div>
+                </div>
+                <p class="all__content__text">
+                  PathSoft - IT Solutions for Your ...
+                </p>
+                <div class="d-flex align-items-center">
+                  <span class="all__content__price">$50</span>
+                  <span class="all__content__sale">258 Sale</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="row for-more d-none">
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/wokiee.png"
+                      alt="Portfo"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    Monstroid2 - Multipurpose Mo...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/mymedi.svg"
+                      alt="mymedi"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    Hazel - Clean Minimalist Multi...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/groca.svg"
+                      alt="grocs"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    Techno - IT Solutions & Business...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/pathsoft.png"
+                      alt="pathsoft"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    PathSoft - IT Solutions for Your ...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/brave.svg"
+                      alt="brave"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">Brave Theme Multipurpose</p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/elementor.svg"
+                      alt="elementor"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    Technology & IT Solution Servic...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/groca.svg"
+                      alt="groca"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    Techno - IT Solutions & Business...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <article class="all__content">
+                  <div class="all__content__img-wrp">
+                    <img
+                      class="all__content__img-wrp__img"
+                      src="./assets/images/icons/pathsoft.png"
+                      alt="pathsoft"
+                    />
+                    <div class="overlay">
+                      <button class="overlay__btn">Preview</button>
+                      <div class="overlay__shop basket">
+                        <img src="./assets/images/icons/Shop.svg" alt="shop" />
+                      </div>
+                    </div>
+                  </div>
+                  <p class="all__content__text">
+                    PathSoft - IT Solutions for Your ...
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <span class="all__content__price">$50</span>
+                    <span class="all__content__sale">258 Sale</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="all__view-all">
+            <div style="font-style: inherit" class="all__view-all__btn">
+              View All Products
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="clients">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="clients__header">
+              <h2>What Our Clients Say</h2>
+              <!-- Slider main container -->
+              <div class="clients__swipper">
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                      <article class="clients__swipper__content">
+                        <img
+                          class="clients__swipper__content__img"
+                          src="./assets/images/icons/quote.svg"
+                          alt="Quote"
+                        />
+                        <p class="clients__swipper__content__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Nibh eleifend arcu vel faucibus arcu, ultrices.
+                          Id in auctor posuere nisl volutpat at laoreet.
+                        </p>
+                        <strong>Guy Hawkins</strong>
+                        <span>CEO, Founder</span>
+                      </article>
+                    </div>
+                    <div class="swiper-slide">
+                      <article class="clients__swipper__content">
+                        <img
+                          class="clients__swipper__content__img"
+                          src="./assets/images/icons/quote.svg"
+                          alt="Quote"
+                        />
+                        <p class="clients__swipper__content__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Nibh eleifend arcu vel faucibus arcu, ultrices.
+                          Id in auctor posuere nisl volutpat at laoreet.
+                        </p>
+                        <strong>Cameron Williamson</strong>
+                        <span>CEO, Founder</span>
+                      </article>
+                    </div>
+                    <div class="swiper-slide">
+                      <article class="clients__swipper__content">
+                        <img
+                          class="clients__swipper__content__img"
+                          src="./assets/images/icons/quote.svg"
+                          alt="Quote"
+                        />
+                        <p class="clients__swipper__content__text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Nibh eleifend arcu vel faucibus arcu, ultrices.
+                          Id in auctor posuere nisl volutpat at laoreet.
+                        </p>
+                        <strong>Cody Fisher</strong>
+                        <span>CEO, Founder</span>
+                      </article>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+                  <!-- If we need scrollbar -->
+                  <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="news__header">
+              <h2>Latest News</h2>
+            </div>
+          </div>
+          <div class="news__swipper">
+            <div class="swiper" style="height: 500px">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <article class="news__swipper__content">
+                    <img
+                      class="news__swipper__content__img"
+                      src="./assets/images/news-image.svg"
+                      alt="News"
+                    />
+                    <div class="news__swipper__content__detail">
+                      <div class="news__swipper__content__detail__desc">
+                        <img
+                          src="./assets/images/icons/clock.svg"
+                          alt="Clock"
+                        />
+                        <span>05, July, 2021</span>
+                      </div>
+                      <div class="news__swipper__content__detail__desc">
+                        <img
+                          src="./assets/images/icons/person.svg"
+                          alt="Person"
+                        />
+                        <span>Cristofer Westervelt</span>
+                      </div>
+                    </div>
+                    <p class="news__swipper__content__text">
+                      We Start Selling WordPress Themes Soon
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="news__swipper__content">
+                    <img
+                      class="news__swipper__content__img"
+                      src="./assets/images/news-image.svg"
+                      alt="News"
+                    />
+                    <div class="news__swipper__content__detail">
+                      <div class="news__swipper__content__detail__desc">
+                        <img
+                          src="./assets/images/icons/clock.svg"
+                          alt="Clock"
+                        />
+                        <span>05, July, 2021</span>
+                      </div>
+                      <div class="news__swipper__content__detail__desc">
+                        <img
+                          src="./assets/images/icons/person.svg"
+                          alt="Person"
+                        />
+                        <span>Cristofer Westervelt</span>
+                      </div>
+                    </div>
+                    <p class="news__swipper__content__text">
+                      We Start Selling WordPress Themes Soon
+                    </p>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="news__swipper__content">
+                    <img
+                      class="news__swipper__content__img"
+                      src="./assets/images/news-image.svg"
+                      alt="News"
+                    />
+                    <div class="news__swipper__content__detail">
+                      <div class="news__swipper__content__detail__desc">
+                        <img
+                          src="./assets/images/icons/clock.svg"
+                          alt="Clock"
+                        />
+                        <span>05, July, 2021</span>
+                      </div>
+                      <div class="news__swipper__content__detail__desc">
+                        <img
+                          src="./assets/images/icons/person.svg"
+                          alt="Person"
+                        />
+                        <span>Cristofer Westervelt</span>
+                      </div>
+                    </div>
+                    <p class="news__swipper__content__text">
+                      We Start Selling WordPress Themes Soon
+                    </p>
+                  </article>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__content">
+            <span class="newsletter__content__text">Newsletter</span>
+            <form action="#" class="newsletter__content__form">
+              <input
+                type="text"
+                class="newsletter__content__form__input"
+                placeholder="Your email"
+              />
+              <button type="submit" class="newsletter__content__form__btn-wrp">
+                <span class="newsletter__content__form__btn-wrp__btn">
+                  <img src="./assets/images/icons/send.svg" alt="Send" />
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="row" style="margin-bottom: 85px">
+            <div class="col-lg-2 col-md-4 col-12">
+              <span class="blog__ctg">
+                <a href="#">HTML Design</a>
+              </span>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <span class="blog__ctg">
+                <a href="#">WP Themes</a>
+              </span>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <span class="blog__ctg">
+                <a href="#">CMS Themes</a>
+              </span>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <span class="blog__ctg">
+                <a href="#">eCommerce</a>
+              </span>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <span class="blog__ctg">
+                <a href="#">Blogging</a>
+              </span>
+            </div>
+            <div class="col-lg-2 col-md-4 col-12">
+              <span class="blog__ctg">
+                <a href="#">UI Templates</a>
+              </span>
+            </div>
+          </div>
+          <p class="blog__end">
+            <span>
+              <img src="./assets/images/icons/c.svg" alt="c" />
+            </span>
+            2021 JS Template. Designd By Ojjomedia All Rights Reserved
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+  </body>
+</html>

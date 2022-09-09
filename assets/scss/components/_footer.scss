@@ -1,0 +1,95 @@
+.newsletter {
+  background-color: $color-pr-dark;
+  opacity: 0.9;
+  padding: 43px 0;
+  color: $color-pr-white;
+  &__content {
+    @include flexbox(center, center);
+    &__text {
+      margin-right: 22px;
+      @include fontstyle($h4, 38px);
+      font-weight: 600;
+    }
+    &__form {
+      @include flexbox();
+      padding: 17px;
+      background-color: white;
+      border-radius: 5px;
+      &__input {
+        padding: 0.375rem 1rem;
+        width: 100%;
+        font-family: inherit;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: none;
+        appearance: none;
+        border-radius: 0.375rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:focus {
+          outline: none;
+        }
+      }
+      &__btn-wrp {
+        background: $color-gr-3;
+        @include flexbox(center, center);
+        border-radius: 5px;
+        font-family: inherit;
+        padding: 9px 13.29px 0.68px 14px;
+        border: none;
+        cursor: pointer;
+        &__btn {
+          @include fontstyle(16px, 24px);
+          font-weight: 400;
+          border-radius: 5px;
+          border: none;
+          background-color: transparent;
+          color: $color-pr-white;
+          cursor: pointer;
+          &:active {
+            background-color: #0062cc;
+            border-color: #005cbf;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog {
+  padding: 100px 0 50px 0;
+  background-color: $color-pr-dark;
+  text-align: center;
+  color: $color-pr-white;
+  &__ctg {
+    display: inline-block;
+    margin-bottom: 15px;
+    & a {
+      @include linkStyle();
+      @include fontstyle($h6, 24px);
+      color: $color-pr-white;
+    }
+  }
+
+  &__end {
+    @include fontstyle($h6, 24px);
+    @include flexbox(center, center);
+    & span {
+      margin-right: 10px;
+    }
+  }
+}
+
+@include underMobileOnly() {
+  .newsletter {
+    &__content {
+      display: block;
+      &__form {
+        margin-top: 15px;
+      }
+    }
+  }
+}

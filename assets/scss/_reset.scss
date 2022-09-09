@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  // background-color: #e5e5e5;
+  background-color: $color-pr-white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: $h1;
+  line-height: 73px;
+}
+
+h2 {
+  font-size: $h2;
+  line-height: 59px;
+}
+
+h3 {
+  font-size: $h3;
+  line-height: 47px;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+a:active {
+  background-color: white;
+  color: -webkit-activelink;
+  color: none;
+}
+a:focus {
+  background-color: transparent;
+}

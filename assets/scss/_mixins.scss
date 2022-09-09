@@ -1,0 +1,42 @@
+@mixin flexbox($alignItems: stretch, $justifyContent: flex-start) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin fontstyle($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin linkStyle($textDecor: none, $color: $color-pr-white) {
+  text-decoration: $textDecor;
+  color: $color;
+}
+
+@mixin ulistStyle($flexDirection: row) {
+  list-style-type: none;
+  display: flex;
+  flex-direction: $flexDirection;
+}
+
+@mixin buttonStyle(
+  $paddingTopBottom: 0,
+  $paddingLeftRigth: 0,
+  $borderWidth: 1px,
+  $borderStyle: solid,
+  $borderColor: black,
+  $color: black,
+  $borderRadius: 30px
+) {
+  padding: $paddingTopBottom $paddingLeftRigth;
+  border: $borderWidth $borderStyle $borderColor;
+  color: $color;
+  border-radius: $borderRadius;
+}
+
+@mixin underMobileOnly() {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}

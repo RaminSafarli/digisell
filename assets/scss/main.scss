@@ -1,0 +1,27 @@
+// Variables
+@import "./variables";
+
+// Reset
+@import "./reset";
+
+// Mixins
+@import "./mixins";
+
+// Tools
+@import "./tools/swiper";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+
+// Bootstrap imports
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/bootstrap-grid.scss";
+@import "../bootstrap/scss/forms";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/bootstrap-utilities.scss";
+@import "../bootstrap/scss/dropdown";
+
+// Pages
+@import "./pages/home";
